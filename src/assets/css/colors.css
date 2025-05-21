@@ -2,4 +2,9 @@
     --opacity-zwart-30: rgba(27, 36, 38, 0.30);
     --opacity-zwart-50: rgba(27, 36, 38, 0.50);
     --opacity-zwart-80: rgba(27, 36, 38, 0.80);
+    --main-colors-oranje-rood: #BF564D;
+    --interactive-oranje-rood-hover: #A6433A;
+    --interactive-oranje-rood-focussed: #59201B;
+    --neutrals-zwart: #1B2426;
+    --neutrals-soft-white: #FAFAFA;
 }

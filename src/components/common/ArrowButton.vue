@@ -1,6 +1,6 @@
 <script setup>
-import arrowLeft from '@/assets/icons/arrow-left.svg';
-import arrowRight from '@/assets/icons/arrow-right.svg';
+import ArrowLeftIcon from '@/components/icons/ArrowLeftIcon.vue';
+import ArrowRightIcon from '@/components/icons/ArrowRightIcon.vue';
 
 defineProps({
     direction: String,
@@ -9,8 +9,9 @@ defineProps({
 </script>
 
 <template>
-    <div class="arrow-button-box d-flex justify-content-center align-items-center" :class="{ disabled }" :tabindex="disabled ? -1 : 0" :aria-disabled="disabled">
-        <img class="arrow" :src="direction === 'left' ? arrowLeft : arrowRight" :alt="`Arrow ${direction}`">
+    <div class="arrow-button-box d-flex justify-content-center align-items-center" :class="{ disabled }"
+        :tabindex="disabled ? -1 : 0" :aria-disabled="disabled">
+        <component :is="direction === 'left' ? ArrowLeftIcon : ArrowRightIcon" class="arrow" aria-hidden="true" />
     </div>
 </template>
 
@@ -20,6 +21,7 @@ defineProps({
     height: 56px;
     border: 2px solid var(--opacity-zwart-30);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .arrow-button-box:hover {
@@ -32,7 +34,7 @@ defineProps({
 
 .arrow-button-box.disabled {
     opacity: 0.3;
-    cursor: not-allowed;
+    cursor: default;
     pointer-events: none;
 }
 
