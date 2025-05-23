@@ -23,7 +23,7 @@ defineProps({
 .content {
     color: var(--main-colors-oranje-rood);
     font-family: "TT Commons Pro";
-    font-size: 17px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 450;
     line-height: 24px;
@@ -52,5 +52,11 @@ defineProps({
     color: var(--neutrals-zwart);
     opacity: 0.3;
     cursor: default;
+}
+
+@media (max-width: 600px) {
+    .content {
+        font-size: 17px;
+    }
 }
 </style>

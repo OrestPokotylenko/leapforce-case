@@ -7,4 +7,6 @@
     --interactive-oranje-rood-focussed: #59201B;
     --neutrals-zwart: #1B2426;
     --neutrals-soft-white: #FAFAFA;
+    --opacity-wit-30: rgba(255, 255, 255, 0.30);
+    --neutrals-wit: #FFFFFF;
 }

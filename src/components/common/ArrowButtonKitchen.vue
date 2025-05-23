@@ -21,23 +21,13 @@ defineProps({
     height: 56px;
     min-width: 56px;
     min-height: 56px;
-    border: 2px solid var(--opacity-zwart-30);
+    border: 2px solid var(--opacity-wit-30);
     border-radius: 4px;
     cursor: pointer;
 }
 
-.arrow-button-box:hover {
-    border-color: var(--opacity-zwart-50);
-}
-
-.arrow-button-box:active {
-    border-color: var(--opacity-zwart-80);
-}
-
-.arrow-button-box.disabled {
-    opacity: 0.3;
-    cursor: default;
-    pointer-events: none;
+.arrow {
+    color: var(--neutrals-wit);
 }
 
 @media (max-width: 600px) {
