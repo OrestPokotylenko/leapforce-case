@@ -1,6 +1,6 @@
 <script setup>
 import OptionalButton from '@/components/common/OptionalButton.vue';
-import KitchenSection from '@/components/sections/KitchenSection.vue';
+import KitchenSection from '@/components/sections/Section.vue';
 
 const label = 'Why choose us?';
 const titleBefore = 'Get the help you need from';
