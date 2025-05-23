@@ -1,3 +1,4 @@
+import '@/assets/css/main.css'
 import '@/assets/css/colors.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@/assets/css/fonts.css';

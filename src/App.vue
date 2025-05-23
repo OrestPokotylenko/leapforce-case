@@ -1,16 +1,17 @@
 <script setup>
-import ArrowButton from '@/components/common/ArrowButton.vue';
 import OptionalButton from '@/components/common/OptionalButton.vue';
 import KitchenSection from '@/components/sections/KitchenSection.vue';
 
-const label = 'Label';
-const titleBefore = 'Mandatory title about the';
-const callToAction = 'call-to-action';
-const titleAfter = 'here';
-const body = 'Optional body copy goes here.';
-const optionalButtonText = 'Optional button';
-const kitchenSectionTitle = 'Title';
-const kitchenSectionText = 'Supporting text about the call-to-action goes here.';
+const label = 'Why choose us?';
+const titleBefore = 'Get the help you need from';
+const callToAction = 'certified local professionals';
+const titleAfter = 'you can trust';
+const body = 'We design and develop websites that not only look beautiful but drive real results. Let’s take your digital presence to the next level.';
+const optionalButtonText = "Let's talk";
+const section1Title = 'Website Development';
+const section1Text = 'Custom-built websites tailored to your business needs with a focus on speed, SEO, and conversion.';
+const section2Title = 'Digital Strategy';
+const section2Text = 'We help you define a digital roadmap to achieve your goals — from marketing automation to content strategy.';
 </script>
 
 <template>
@@ -23,10 +24,8 @@ const kitchenSectionText = 'Supporting text about the call-to-action goes here.'
             <p class="body">{{ body }}</p>
             <OptionalButton :text="optionalButtonText" />
         </div>
-        <KitchenSection class="kitchen-section" :title="kitchenSectionTitle"
-            :text="kitchenSectionText" />
-        <KitchenSection class="kitchen-section" :title="kitchenSectionTitle"
-            :text="kitchenSectionText" />
+        <KitchenSection class="kitchen-section" :title="section1Title" :text="section1Text" />
+        <KitchenSection class="kitchen-section" :title="section2Title" :text="section2Text" />
     </div>
 </template>
 
@@ -41,6 +40,7 @@ const kitchenSectionText = 'Supporting text about the call-to-action goes here.'
     padding-right: 64px;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 96px;
 }
 
 .header {
@@ -53,9 +53,8 @@ const kitchenSectionText = 'Supporting text about the call-to-action goes here.'
 }
 
 h1 {
-    color: #212121;
+    color: var(--header-zwart);
     text-align: center;
-    font-family: "TT Commons Pro";
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -64,7 +63,7 @@ h1 {
 }
 
 .call-to-action {
-    color: #212121;
+    color: var(--header-zwart);
     font-family: "GT Alpina";
     font-size: 42px;
     font-style: normal;
@@ -74,15 +73,11 @@ h1 {
 }
 
 p {
-    color: #1E2526;
     text-align: center;
-    font-family: "TT Commons Pro";
-    font-style: normal;
-    font-weight: 450;
-    margin: 0;
 }
 
 .label {
+    color: var(--main-colors-groengrijs);
     font-size: 15px;
     line-height: 16px;
     letter-spacing: 0.3px;
@@ -90,8 +85,8 @@ p {
 }
 
 .body {
-    font-size: 19px;
-    line-height: 24px;
+    color: var(--body-zwart);
+    opacity: 0.8;
     margin: 24px 0;
 }
 
@@ -117,6 +112,7 @@ p {
         column-gap: 12px;
         padding-left: 20px;
         padding-right: 20px;
+        margin-bottom: 64px;
     }
 
     .header {
@@ -144,7 +140,6 @@ p {
     }
 
     .body {
-        font-size: 17px;
         margin: 16px 0;
     }
 }

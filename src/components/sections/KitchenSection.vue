@@ -71,14 +71,7 @@ strong {
 
 p {
     color: var(--neutrals-soft-white);
-    font-family: "TT Commons Pro";
-    align-self: stretch;
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: 24px;
     opacity: 0.5;
-    margin: 0;
 }
 
 @media (max-width: 992px) {
@@ -101,14 +94,14 @@ p {
         margin-bottom: 16px;
     }
 
+    .content {
+        margin: 0 16px 24px 16px;
+    }
+
     strong {
         font-size: 22px;
         line-height: 24px;
         letter-spacing: -0.22px;
-    }
-
-    p {
-        font-size: 17px;
     }
 
     .gradient-overlay {

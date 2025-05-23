@@ -7,27 +7,15 @@ defineProps({
 </script>
 
 <template>
-    <div class="button" :class="{ disabled }" :tabindex="disabled ? -1 : 0" :aria-disabled="disabled">
+    <div class="d-flex flex-row align-items-center button" :class="{ disabled }" :tabindex="disabled ? -1 : 0" :aria-disabled="disabled">
         <p class="content">{{ text }}</p>
         <ArrowRightIcon class="arrow" />
     </div>
 </template>
 
 <style scoped>
-.button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .content {
     color: var(--main-colors-oranje-rood);
-    font-family: "TT Commons Pro";
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: 24px;
-    margin: 0;
     margin-right: 4px;
     cursor: pointer;
 }
@@ -54,9 +42,9 @@ defineProps({
     cursor: default;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .content {
         font-size: 17px;
     }
-}
+} */
 </style>

@@ -24,6 +24,7 @@ defineProps({
     border: 2px solid var(--opacity-wit-30);
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .arrow {
