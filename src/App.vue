@@ -30,11 +30,6 @@ const section2Text = 'We help you define a digital roadmap to achieve your goals
 </template>
 
 <style scoped>
-#app {
-    margin: 0;
-    padding: 0;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
