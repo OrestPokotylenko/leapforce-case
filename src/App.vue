@@ -51,6 +51,7 @@ const section2Text = 'We help you define a digital roadmap to achieve your goals
 }
 
 h1 {
+    font-family: 'TT Commons Pro Bold';
     color: var(--header-zwart);
     text-align: center;
     font-size: 40px;
