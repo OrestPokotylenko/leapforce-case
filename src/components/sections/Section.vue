@@ -1,6 +1,6 @@
 <script setup>
 import kitchenImage from '@/assets/images/kitchen.jpg';
-import ArrowButtonKitchen from '@/components/common/ArrowButtonKitchen.vue';
+import ArrowButtonKitchen from '@/components/common/ArrowButtonSection.vue';
 
 defineProps({
     title: String,
@@ -59,7 +59,7 @@ defineProps({
 }
 
 strong {
-    color: #FFF;
+    color: var(--wit);
     font-family: "TT Commons Pro";
     align-self: stretch;
     font-size: 28px;
@@ -109,7 +109,7 @@ p {
     }
 
     .text {
-        width: 239px;
+        width: 237px;
     }
 }
 </style>

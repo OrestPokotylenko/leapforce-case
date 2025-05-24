@@ -10,7 +10,7 @@ npm install
 npm run dev
 ```
 
-## HubSpot CMS Custom Fields Proposal
+### HubSpot CMS Custom Fields Proposal
 
 Below is a proposal for the custom fields required to make the “CTA Section - Two Blocks” fully editable by a marketeer or project manager in HubSpot CMS.
 
@@ -26,3 +26,8 @@ Below is a proposal for the custom fields required to make the “CTA Section - 
 | Section 1 Text             | Required          | Custom-built websites tailored to your business needs with a focus on speed, SEO, and conversion. | Description for the first content block                           | Max 200 characters, multiline allowed        |
 | Section 2 Title            | Required          | Digital Strategy                                   | Title for the second content block                                | Max 60 characters                            |
 | Section 2 Text             | Required          | We help you define a digital roadmap to achieve your goals — from marketing automation to content strategy. | Description for the second content block                          | Max 200 characters, multiline allowed        |
+
+
+### ArrowButton en ArrowButtonSection
+
+Het Figma-document bevatte geen ontwerp voor een witgekleurde ArrowButton. Daarom heb ik zelf twee verschillende versies uitgewerkt.

@@ -35,9 +35,7 @@ const section2Text = 'We help you define a digital roadmap to achieve your goals
     grid-template-columns: repeat(12, 1fr);
     column-gap: 24px;
     max-width: 1600px;
-    margin: 0 auto;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding: 0 64px;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 96px;
@@ -96,8 +94,8 @@ p {
 
 @media (max-width: 992px) {
     .grid-container {
-        padding-left: 32px;
-        padding-right: 32px;
+        column-gap: 16px;
+        padding: 0 24px;
     }
 
     .header {
@@ -110,8 +108,7 @@ p {
     .grid-container {
         grid-template-columns: repeat(6, 1fr);
         column-gap: 12px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0 20px;
         margin-bottom: 64px;
     }
 
