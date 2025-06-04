@@ -16,13 +16,13 @@ defineProps({
 
 <style scoped>
 .button {
-    width: 158px;
+    min-width: 158px;
     gap: 4px;
 }
 
 .content {
     color: var(--main-colors-oranje-rood);
-    width: 130px;
+    min-width: 130px;
     text-align: start;
     cursor: pointer;
 }
@@ -50,11 +50,11 @@ defineProps({
 
 @media (max-width: 600px) {
     .content {
-        width: 117px;
+        min-width: 117px;
     }
 
     .button {
-        width: 145px;
+        min-width: 145px;
     }
 }
 </style>
