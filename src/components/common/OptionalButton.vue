@@ -7,22 +7,28 @@ defineProps({
 </script>
 
 <template>
-    <div class="d-flex flex-row align-items-center button" :class="{ disabled }" :tabindex="disabled ? -1 : 0" :aria-disabled="disabled">
+    <div class="d-flex flex-row align-items-center button" :class="{ disabled }" :tabindex="disabled ? -1 : 0"
+        :aria-disabled="disabled">
         <p class="content">{{ text }}</p>
         <ArrowRightIcon class="arrow" />
     </div>
 </template>
 
 <style scoped>
+.button {
+    width: 158px;
+    gap: 4px;
+}
+
 .content {
     color: var(--main-colors-oranje-rood);
-    margin-right: 4px;
+    width: 130px;
+    text-align: start;
     cursor: pointer;
 }
 
 .arrow {
     color: var(--main-colors-oranje-rood);
-    margin: 6px;
 }
 
 .button:hover .content,
@@ -42,9 +48,13 @@ defineProps({
     cursor: default;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     .content {
-        font-size: 17px;
+        width: 117px;
     }
-} */
+
+    .button {
+        width: 145px;
+    }
+}
 </style>

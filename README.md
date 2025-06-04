@@ -31,3 +31,7 @@ Below is a proposal for the custom fields required to make the “CTA Section - 
 ### ArrowButton en ArrowButtonSection
 
 Het Figma-document bevatte geen ontwerp voor een witgekleurde ArrowButton. Daarom heb ik zelf twee verschillende versies uitgewerkt.
+
+### Title
+
+De CSS voor de titel is overgenomen uit Figma, maar het resultaat is niet exact hetzelfde. Ik denk dat dit komt door verschillen in de manier waarop fonts gerenderd worden in browsers en in Figma.

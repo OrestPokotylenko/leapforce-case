@@ -55,12 +55,13 @@ defineProps({
 }
 
 .text {
+    text-align: start;
     gap: 8px;
 }
 
 strong {
     color: var(--wit);
-    font-family: "TT Commons Pro";
+    font-family: "TT Commons Pro Bold";
     align-self: stretch;
     font-size: 28px;
     font-style: normal;
@@ -99,9 +100,9 @@ p {
     }
 
     strong {
-        font-size: 22px;
+        font-size: 23px;
         line-height: 24px;
-        letter-spacing: -0.22px;
+        letter-spacing: -0.46px;
     }
 
     .gradient-overlay {
