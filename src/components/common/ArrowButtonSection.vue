@@ -24,7 +24,7 @@ defineProps({
     border: 2px solid var(--opacity-wit-30);
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 16px;
 }
 
 .arrow {
@@ -35,6 +35,8 @@ defineProps({
     .arrow-button-box {
         width: 48px;
         height: 48px;
+        min-width: 48px;
+        min-height: 48px;
     }
 }
 </style>

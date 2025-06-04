@@ -15,21 +15,26 @@ const section2Text = 'We help you define a digital roadmap to achieve your goals
 </script>
 
 <template>
-    <div class="grid-container">
-        <div class="header">
+    <div class="d-flex justify-content-center content">
+        <div class="grid-container">
             <p class="label">{{ label }}</p>
             <h1>
                 {{ titleBefore }} <span class="call-to-action">{{ callToAction }}</span> {{ titleAfter }}
             </h1>
             <p class="body">{{ body }}</p>
-            <OptionalButton :text="optionalButtonText" />
+            <OptionalButton class="optional-button" :text="optionalButtonText" />
+            <KitchenSection class="kitchen-section" :title="section1Title" :text="section1Text" />
+            <KitchenSection class="kitchen-section" :title="section2Title" :text="section2Text" />
         </div>
-        <KitchenSection class="kitchen-section" :title="section1Title" :text="section1Text" />
-        <KitchenSection class="kitchen-section" :title="section2Title" :text="section2Text" />
     </div>
 </template>
 
 <style scoped>
+.content {
+    text-align: center;
+    margin-top: 64px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -41,21 +46,12 @@ const section2Text = 'We help you define a digital roadmap to achieve your goals
     margin-bottom: 96px;
 }
 
-.header {
-    grid-column: 5 / span 4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 64px 0 80px 0;
-}
-
 h1 {
     font-family: 'TT Commons Pro Bold';
     color: var(--header-zwart);
+    grid-column: 4 / span 6;
     text-align: center;
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
     line-height: 48px;
     letter-spacing: -1.2px;
@@ -69,6 +65,7 @@ h1 {
     font-weight: 300;
     line-height: 48px;
     letter-spacing: -1.26px;
+    white-space: nowrap;
 }
 
 p {
@@ -77,6 +74,7 @@ p {
 
 .label {
     color: var(--main-colors-groengrijs);
+    grid-column: 4 / span 6;
     font-size: 15px;
     line-height: 16px;
     letter-spacing: 0.3px;
@@ -85,6 +83,7 @@ p {
 
 .body {
     color: var(--body-zwart);
+    grid-column: 3 / span 8;
     opacity: 0.8;
     margin: 24px 0;
 }
@@ -93,19 +92,44 @@ p {
     grid-column: span 6;
 }
 
+.optional-button {
+    grid-column: 4 / span 6;
+    justify-self: center;
+    margin-bottom: 80px;
+}
+
 @media (max-width: 992px) {
+    .content {
+        margin-top: 64px;
+    }
+
     .grid-container {
         column-gap: 16px;
         padding: 0 24px;
     }
 
-    .header {
-        grid-column: 3 / span 8;
-        margin: 64px 0 48px 0;
+    .label {
+        grid-column: 2 / span 10;
+    }
+
+    h1 {
+        grid-column: 2 / span 10;
+    }
+
+    .body {
+        grid-column: 1 / span 12;
+    }
+
+    .optional-button {
+        margin-bottom: 48px;
     }
 }
 
 @media (max-width: 600px) {
+    .content {
+        margin-top: 48px;
+    }
+
     .grid-container {
         grid-template-columns: repeat(6, 1fr);
         column-gap: 12px;
@@ -113,32 +137,36 @@ p {
         margin-bottom: 64px;
     }
 
-    .header {
-        grid-column: 1 / span 6;
-        margin: 48px 0 32px 0;
-        padding: 0 16px;
-
-    }
-
     .label {
+        grid-column: 1 / span 6;
         font-size: 14px;
         letter-spacing: 0.28px;
+        line-height: 16px;
     }
 
     h1 {
+        grid-column: 1 / span 6;
         font-size: 36px;
         line-height: 40px;
         letter-spacing: -0.72px;
+        align-self: start;
     }
 
     .call-to-action {
         font-size: 38px;
         line-height: 40px;
         letter-spacing: -1.14px;
+        white-space: normal;
     }
 
     .body {
+        grid-column: 1 / span 6;
         margin: 16px 0;
+    }
+
+    .optional-button {
+        grid-column: 2 / span 4;
+        margin-bottom: 32px;
     }
 }
 </style>
